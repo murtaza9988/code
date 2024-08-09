@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student List</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th> FirstName</th>
+                <th>Lastname</th>
+                <th>fathername</th>
+                <th>rollnumber</th>
+                <th>address</th>
+                <th>grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in student %}
+                <tr>
+                    <td>{{ student.First_name }}</td>
+                    <td>{{ student.Last_name }}</td>
+                    <td>{{ student.father_name }}</td>
+                    <td>{{ student.roll_number }}</td>
+                    <td>{{ student.address }}</td>
+                    <td>{{ student.grade}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+
+    
+</ul>
+</body>
+</html>
